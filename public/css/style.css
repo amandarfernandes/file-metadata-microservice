@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: #323232;
+  box-sizing: border-box;
+  background: salmon;
+}
+
+footer,
+header {
+  background: #434343;
+  color: #e5e5e5;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  width: 400px;
+  margin: 40px auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #faf5fb;
+  padding: 13px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  justify-content: center;
+}
+.filename + label {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  width: 150px;
+  margin: 5px auto;
+}
+
+.filename:focus + label,
+.filename + label:hover {
+  background: red;
+}
+
+.filename:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.filename {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  border: 4px;
+}
+
+input[type='submit'] {
+  background: #383838;
+  color: #f4f5f3;
+  margin: 5px auto;
+
+  font-size: 1.2em;
+}
+
+.preview {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 8px;
+}
+
+footer ul {
+  display: inline;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  list-style: none;
+}
+
+footer a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}

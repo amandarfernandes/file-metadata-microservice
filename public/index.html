@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File Metadata Microservice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h2>File Metadata Microservice</h2>
+    </header>
+    <main>
+        <div class="container">
+            <h3>Build a JavaScript app that fulfills the following user stories</h3>
+            <p>I can submit a FormData object that includes a file upload.</p>
+            <p>When I submit something, I will receive the file size in bytes within the JSON response</p>
+            <br>
+            <form action="/" method="POST" enctype="multipart/form-data">
+
+                <input type="file" name="filename" class="filename" id="filename">
+                <label style="text-align:center" for="filename">Choose a file </label>
+
+                <p class="preview"> No files currently selected</p>
+                <input type="submit">
+            </form>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Amanda Fernandes</p>
+        <ul>
+            <li>
+                <a href="https://twitter.com/mandycodestoo" class="fa fa-facebook"> </a>
+            </li>
+            <li>
+                <a href="https://github.com/amandarfernandes" class="fa fa-github"></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
